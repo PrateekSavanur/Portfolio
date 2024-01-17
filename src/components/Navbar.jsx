@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div className="z-1 top-0 w-full bg-blue-950 md:fixed">
+    <div className="top-0 w-full bg-blue-950 md:sticky z-[999]">
       <div className="md:hidden">
         <NavItems />
       </div>
@@ -21,14 +21,20 @@ export default function Navbar() {
             <Link className="mr-8 p-2" to="/experience">
               Experience
             </Link>
-            <Link className="mr-8 p-2" to="/work">
-              Work
+            <Link className="mr-8 p-2" to="/projects">
+              Projects
             </Link>
             <Link className="mr-8 p-2" to="/contact">
               Contact
             </Link>
             <button className="rounded-lg border-2 border-teal-400 text-teal-400 p-2 mr-8">
-              Resume
+              <a
+                href="https://bit.ly/PrateekSavanur"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Resume
+              </a>
             </button>
           </div>
         </div>

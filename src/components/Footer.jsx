@@ -4,13 +4,13 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export default function Footer() {
   return (
-    <div className="w-full pt-6 fixed bottom-0 bg-inherit">
-      <div className="text-slate-300 flex justify-center pb-6">
+    <div className="w-full pt-3 fixed bottom-0 bg-inherit h-15">
+      <div className="text-slate-300 flex justify-center ">
         <a
           href="https://linkedin.com/in/prateek-p-savanur-50b78b24a"
           target="_blank"
           rel="noreferrer"
-          className="px-4"
+          className="pr-4"
         >
           <LinkedInIcon />
         </a>
@@ -18,7 +18,7 @@ export default function Footer() {
           href="https://twitter.com/prateek_savanur"
           target="_blank"
           rel="noreferrer"
-          className="px-4"
+          className=""
         >
           <XIcon />
         </a>
@@ -26,11 +26,12 @@ export default function Footer() {
           href="https://github.com/PrateekSavanur"
           target="_blank"
           rel="noreferrer"
-          className="px-4"
+          className="pl-4"
         >
           <GitHubIcon />
         </a>
       </div>
+      <p className="text-slate-300 text-center pb-3"> &copy; Prateek Savanur</p>
     </div>
   );
 }

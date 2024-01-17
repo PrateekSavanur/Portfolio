@@ -6,7 +6,7 @@ export default function NavItems() {
   const [open, setOpen] = useState();
 
   return (
-    <div className="flex justify-between p-5 text-slate-100 md:invisible">
+    <div className="flex justify-between p-5 text-slate-100 z-[999]">
       <div>
         <Link to="/">Prateek</Link>
       </div>
@@ -37,7 +37,13 @@ export default function NavItems() {
               Contact
             </Link>
             <button className="rounded-lg border-2 border-teal-400 text-teal-400 mt-4">
-              Resume
+              <a
+                href="https://bit.ly/PrateekSavanur"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Resume
+              </a>
             </button>
           </div>
         </div>

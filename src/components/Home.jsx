@@ -2,7 +2,7 @@ import Typewriter from "typewriter-effect/dist/react";
 
 export default function Home() {
   return (
-    <div className="mt-[45px] md:pt-14 md:mt-[80px] ">
+    <div className="mt-[45px] md:pt-14 md:mt-[80px]">
       <div className="grid pb-[7vh]  mx-4 items-center px-[10%]">
         <span className="text-teal-400 font-mono text-left text-[15px] sm:text-[30px]  md:text-[40px]">
           Hello, I am
@@ -33,12 +33,12 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="bg-slate-300 sm:pb-[70px] pt-5 font-serif font-bold text-center text-[20px] sm:text-[40px]  md:text-[60px]">
+      <div className="text-slate-900 bg-slate-200 sm:pb-[70px] pt-5 font-serif font-bold text-center text-[20px] sm:text-[40px]  md:text-[60px]">
         Technical Skills
       </div>
 
-      <div className="bg-slate-300 grid grid-cols-1 font-mono items-center sm:grid-cols-2 md:grid-cols-3 gap-5 pt-10 pb-24 pr-9 text-[15px] sm:text-[17px] md:text-[20px]">
-        <div className="bg-blue-950 shadow-blue-900/80 py-3 pl-5 text-left rounded-lg ml-9 text-slate-300 hover:bg-blue-900 hover:py-6">
+      <div className="bg-slate-200 grid grid-cols-1 font-mono items-center mb-14 sm:grid-cols-2 md:grid-cols-3 gap-5 pt-10 pb-24 pr-9 text-[15px] sm:text-[17px] md:text-[20px]">
+        <div className="bg-white shadow-blue-900/80 py-3 pl-5 text-left rounded-lg ml-9 text-slate-900  hover:py-6">
           <h2 className="font-bold mb-4">Web Development Skills</h2>
           <ul className="list-disc pl-4">
             <li>HTML, CSS</li>
@@ -48,7 +48,7 @@ export default function Home() {
             <li>MongoDB, GraphQL</li>
           </ul>
         </div>
-        <div className="bg-blue-950 py-3 pl-5 text-left rounded-lg ml-9 text-slate-300 hover:bg-blue-900 hover:py-6">
+        <div className="bg-white shadow-blue-900/80 py-3 pl-5 text-left rounded-lg ml-9 text-slate-900  hover:py-6">
           <h2 className="font-bold mb-4">Web Development Skills</h2>
           <ul className="list-disc pl-4">
             <li>HTML, CSS</li>
@@ -58,7 +58,7 @@ export default function Home() {
             <li>MongoDB, GraphQL</li>
           </ul>
         </div>
-        <div className="bg-blue-950 py-3 pl-5 text-left rounded-lg ml-9 text-slate-300 hover:bg-blue-900 hover:py-6">
+        <div className="bg-white shadow-blue-900/80 py-3 pl-5 text-left rounded-lg ml-9 text-slate-900  hover:py-6">
           <h2 className="font-bold mb-4">Web Development Skills</h2>
           <ul className="list-disc pl-4">
             <li>HTML, CSS</li>
