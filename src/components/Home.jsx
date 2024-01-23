@@ -29,8 +29,16 @@ export default function Home() {
           in the Ethereum ecosystem. Seeking opportunities to contribute to
           innovative blockchain projects and apply expertise in building secure
           and reliable solutions. Some experience in auditing the smart
-          contracts and trying to improve on that part.
+          contracts and trying to improve on that part. <br />
+          <br />
+          <br />
+          Checkout my projects 👇👇
         </p>
+        <div className="flex justify-start">
+          <button className="rounded-lg border-2 border-teal-400 text-teal-400 px-6 py-3 mr-8">
+            <a href="./projects">Projects</a>
+          </button>
+        </div>
       </div>
 
       <div className="text-slate-900 bg-slate-200 sm:pb-[70px] pt-5 font-serif font-bold text-center text-[20px] sm:text-[40px]  md:text-[60px]">

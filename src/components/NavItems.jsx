@@ -24,19 +24,30 @@ export default function NavItems() {
             </button>
           </div>
           <div className="flex flex-col text-right text-[20px]">
-            <Link className="mt-4" to="/">
+            <Link onClick={() => setOpen(!open)} className="mt-4" to="/">
               About
             </Link>
-            <Link className="mt-4" to="/experience">
+            <Link
+              onClick={() => setOpen(!open)}
+              className="mt-4"
+              to="/experience"
+            >
               Experience
             </Link>
-            <Link className="mt-4" to="/work">
-              Work
+            <Link
+              onClick={() => setOpen(!open)}
+              className="mt-4"
+              to="/projects"
+            >
+              Projects
             </Link>
-            <Link className="mt-4" to="/contact">
+            <Link onClick={() => setOpen(!open)} className="mt-4" to="/contact">
               Contact
             </Link>
-            <button className="rounded-lg border-2 border-teal-400 text-teal-400 mt-4">
+            <button
+              onClick={() => setOpen(!open)}
+              className="rounded-lg border-2 border-teal-400 text-teal-400 mt-4"
+            >
               <a
                 href="https://bit.ly/PrateekSavanur"
                 target="_blank"

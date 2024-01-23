@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Experience from "./components/Experience";
+import Projects from "./components/Projects";
 
 export default function App() {
   return (
@@ -11,9 +12,8 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/" element={<Projects />} />
-          <Route path="/project/:id" element={<ProjectDisplay />} />
-          <Route path="/education" element={<Education />} /> */}
+          <Route path="/projects" element={<Projects />} />
+          {/* <Route path="/education" element={<Education />} /> */}
           <Route path="/experience" element={<Experience />} />
         </Routes>
         <Footer />
