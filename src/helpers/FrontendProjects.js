@@ -1,5 +1,5 @@
-import Travel from "../../public/assets/Travel.jpg";
-import Portfolio from "../../public/assets/Portfolio.jpg";
+import Travel from "../assets/Travel.jpg";
+import Portfolio from "../assets/Portfolio.jpg";
 
 export const FrontendProjects = [
   {
@@ -7,7 +7,7 @@ export const FrontendProjects = [
     name: "Travel List",
     image: Travel,
     skills: "React Js",
-    category: "Blockchain",
+    category: "Fontend",
     link: "https://github.com/PrateekSavanur/Travel-List",
   },
   {
@@ -15,7 +15,7 @@ export const FrontendProjects = [
     name: "Portfolio",
     image: Portfolio,
     skills: "React Js",
-    category: "Blockchain",
+    category: "Frontend",
     link: "https://github.com/PrateekSavanur/personal-portfolio",
   },
 ];

@@ -1,4 +1,5 @@
 import Typewriter from "typewriter-effect/dist/react";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
         <div className="text-slate-300 mt-5 font-serif text-left text-[20px] sm:text-[40px]  md:text-[60px] ">
           <Typewriter
             options={{
-              strings: ["Prateek Savanur", "A Blockchain developer"],
+              strings: ["Prateek Savanur, A Blockchain developer"],
               autoStart: true,
               loop: true,
             }}
@@ -34,10 +35,10 @@ export default function Home() {
           <br />
           Checkout my projects 👇👇
         </p>
-        <div className="flex justify-start">
-          <button className="rounded-lg border-2 border-teal-400 text-teal-400 px-6 py-3 mr-8">
-            <a href="./projects">Projects</a>
-          </button>
+        <div className="flex justify-start rounded-lg border-2 border-teal-400 text-teal-400 px-3 py-1 w-28 text-[10px] sm:text-[15px]  md:text-[20px]">
+          <Link className="p-2" to="/projects">
+            Projects
+          </Link>
         </div>
       </div>
 
@@ -49,7 +50,6 @@ export default function Home() {
         <div className="bg-white shadow-blue-900/80 py-3 pl-5 text-left rounded-lg ml-9 text-slate-900  hover:py-6">
           <h2 className="font-bold mb-4">Web Development Skills</h2>
           <ul className="list-disc pl-4">
-            <li>HTML, CSS</li>
             <li>JavaScript</li>
             <li>React Js</li>
             <li>Node.js, Express.js</li>
@@ -57,23 +57,21 @@ export default function Home() {
           </ul>
         </div>
         <div className="bg-white shadow-blue-900/80 py-3 pl-5 text-left rounded-lg ml-9 text-slate-900  hover:py-6">
-          <h2 className="font-bold mb-4">Web Development Skills</h2>
+          <h2 className="font-bold mb-4">Blockchain Skills</h2>
           <ul className="list-disc pl-4">
-            <li>HTML, CSS</li>
-            <li>JavaScript</li>
-            <li>React Js</li>
-            <li>Node.js, Express.js</li>
-            <li>MongoDB, GraphQL</li>
+            <li>Solidity</li>
+            <li>Hardhat, ethers.js</li>
+            <li>Mocha,js</li>
+            <li>GraphQL</li>
           </ul>
         </div>
         <div className="bg-white shadow-blue-900/80 py-3 pl-5 text-left rounded-lg ml-9 text-slate-900  hover:py-6">
-          <h2 className="font-bold mb-4">Web Development Skills</h2>
+          <h2 className="font-bold mb-4">Programming Languages</h2>
           <ul className="list-disc pl-4">
-            <li>HTML, CSS</li>
-            <li>JavaScript</li>
-            <li>React Js</li>
-            <li>Node.js, Express.js</li>
-            <li>MongoDB, GraphQL</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>Javascript</li>
+            <li>Solidity</li>
           </ul>
         </div>
       </div>

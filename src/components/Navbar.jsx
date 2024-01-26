@@ -9,8 +9,8 @@ export default function Navbar() {
       </div>
       <div className=" hidden  md:block">
         <div className="flex justify-between text-[20px] text-slate-100 ">
-          <div className="p-5 ml-4 ">
-            <Link className="p-2 " to="/">
+          <div className="pt-6 pl-3 ml-4 ">
+            <Link className="" to="/">
               Prateek
             </Link>
           </div>
