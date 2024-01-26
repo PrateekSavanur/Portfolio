@@ -3,9 +3,9 @@ import emailjs from "@emailjs/browser";
 import { useEffect } from "react";
 
 export default function Contact() {
-  const USER_ID = import.meta.env.VITE_USER_ID;
-  const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
-  const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+  // const USER_ID = import.meta.env.VITE_USER_ID;
+  // const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+  // const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
   const form = useRef();
 
   const [checkInput, setCheckInput] = useState(false);
@@ -18,14 +18,21 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID).then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    emailjs
+      .sendForm(
+        "service_kvx2i9t",
+        "template_cl8b9s8",
+        form.current,
+        "2HyGHr1l-6nQz6b3P"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
     form.current.reset();
   };
