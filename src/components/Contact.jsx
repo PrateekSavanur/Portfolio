@@ -28,6 +28,9 @@ export default function Contact() {
       .then(
         (result) => {
           console.log(result.text);
+          setName("");
+          setEmail("");
+          setMessage("");
         },
         (error) => {
           console.log(error.text);
