@@ -9,10 +9,13 @@ import Contact from "./components/Contact";
 
 import { FullStackprojectList } from "./helpers/FullStackProjects";
 import { FrontendProjects } from "./helpers/FrontendProjects";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function App() {
   return (
     <div className="bg-blue-950">
+      <ToastContainer />
       <Router>
         <Navbar />
         <Routes>

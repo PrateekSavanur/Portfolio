@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useEffect } from "react";
+import { toast } from "react-toastify";
 
 export default function Contact() {
   // const USER_ID = import.meta.env.VITE_USER_ID;
@@ -31,6 +32,7 @@ export default function Contact() {
           setName("");
           setEmail("");
           setMessage("");
+          toast.success("Message sent successfully!");
         },
         (error) => {
           console.log(error.text);
