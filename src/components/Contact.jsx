@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useEffect } from "react";
 
 export default function Contact() {
   const USER_ID = import.meta.env.VITE_USER_ID;
@@ -8,7 +9,11 @@ export default function Contact() {
   const form = useRef();
 
   const [checkInput, setCheckInput] = useState(false);
-  const [emailError, setEmailError] = useState("");
+
+  const [messageError, setMessageError] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -25,44 +30,27 @@ export default function Contact() {
     form.current.reset();
   };
 
-  // Function to handle input change
-  const handleInputChange = () => {
-    const nameInput = form.current.user_name.value;
-    const emailInput = form.current.user_email.value;
-    const messageInput = form.current.message.value;
-
-    // Check if all inputs are filled
-    if (nameInput && emailInput && messageInput) {
-      // Check if email is valid
-      if (validateEmail(emailInput)) {
-        // Check if message contains at least 150 words
-        if (countWords(messageInput) >= 150) {
-          setEmailError("");
-          setCheckInput(true);
-        } else {
-          setEmailError("Message should contain at least 150 words.");
-          setCheckInput(false);
-        }
+  useEffect(() => {
+    if (name && email && message) {
+      if (countWords(message) >= 150) {
+        setMessageError("");
+        setCheckInput(true);
       } else {
-        setEmailError("Please enter a valid email address.");
+        if (countWords(message) < 150) {
+          setMessageError("Message must be more than 150 words");
+        } else {
+          setMessageError("");
+        }
+
         setCheckInput(false);
       }
     } else {
-      setEmailError("");
       setCheckInput(false);
     }
-  };
+  }, [email, message, name, checkInput]);
 
-  // Function to count words in the message
   const countWords = (message) => {
     return message.split(/\s+/).filter((word) => word.trim() !== "").length;
-  };
-
-  // Function to validate email format using regular expression
-  const validateEmail = (email) => {
-    // Regular expression for email validation
-    const re = /\S+@\S+\.\S+/;
-    return re.test(email);
   };
 
   return (
@@ -71,7 +59,6 @@ export default function Contact() {
         ref={form}
         onSubmit={sendEmail}
         className="bg-slate-300 rounded px-8 pt-6 pb-8 mb-4"
-        onChange={handleInputChange} // Call handleInputChange on input change
       >
         <div className="mb-4">
           <label
@@ -86,6 +73,8 @@ export default function Contact() {
             type="text"
             name="user_name"
             placeholder="Your Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
         </div>
         <div className="mb-4">
@@ -96,24 +85,21 @@ export default function Contact() {
             Email
           </label>
           <input
-            className={`shadow bg-slate-200 appearance-none border rounded w-full py-2 px-3 text-slate-600 leading-tight focus:outline-none ${
-              emailError && "border-red-500"
-            }`}
+            className={`shadow bg-slate-200 appearance-none border rounded w-full py-2 px-3 text-slate-600 leading-tight focus:outline-none `}
             id="user_email"
             type="email"
             name="user_email"
             placeholder="Your Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
-          {emailError && (
-            <p className="text-red-500 text-xs italic">{emailError}</p>
-          )}
         </div>
         <div className="mb-6">
           <label
             className="block text-gray-700 text-lg font-bold mb-2"
             htmlFor="message"
           >
-            Message [min 150 words]
+            Message
           </label>
           <textarea
             className="shadow bg-slate-200 appearance-none border rounded w-full py-2 px-3 text-slate-600 leading-tight focus:outline-none"
@@ -121,13 +107,18 @@ export default function Contact() {
             name="message"
             placeholder="Your Message"
             rows="6"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
           />
+          {messageError && (
+            <p className="text-red-400 text-xs italic">{messageError}</p>
+          )}
         </div>
 
         <button
-          className={`bg-teal-400 hover:bg-teal-600 text-white font-bold py-2 px-6 rounded focus:outline-none focus:shadow-outline ${
+          className={`${
             !checkInput && "bg-gray-400 pointer-events-none"
-          }`}
+          } bg-teal-400 hover:bg-teal-600 text-white font-bold py-2 px-6 rounded focus:outline-none focus:shadow-outline `}
           disabled={!checkInput}
         >
           Send
