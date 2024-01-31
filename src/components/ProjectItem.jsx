@@ -15,7 +15,9 @@ export default function ProjectItem({ project, type }) {
           className="object-cover w-full h-full"
         />
         {/* Details hidden initially, revealed on hover */}
-        <div className="project-details absolute bottom-0 left-0 right-0 p-4 bg-teal-200 bg-opacity-80 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+        <div
+          className={`project-details absolute bottom-0 left-0 right-0 p-4 bg-${project.color} bg-opacity-80 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out`}
+        >
           <h1 className="text-xl font-bold mb-2">{project.name}</h1>
           <div className="mb-2">{project.category}</div>
           <div>

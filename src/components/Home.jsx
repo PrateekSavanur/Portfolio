@@ -9,7 +9,7 @@ export default function Home() {
           Hello, I am
         </span>
 
-        <div className="text-slate-300 mt-5 font-serif text-left text-[20px] sm:text-[40px]  md:text-[60px] ">
+        <div className="text-slate-300 mt-5 font-serif text-left text-[25px] sm:text-[40px]  md:text-[60px] ">
           <Typewriter
             options={{
               strings: ["Prateek Savanur, A Blockchain developer"],
@@ -18,10 +18,10 @@ export default function Home() {
             }}
           />
         </div>
-        <h2 className="text-slate-500 text-left font-mono  mt-5 text-[15px] sm:text-[40px]  md:text-[55px]">
+        <h2 className="text-slate-500 text-left font-mono  mt-5 text-[20px] sm:text-[40px]  md:text-[55px]">
           I build Dapps on Ethereum
         </h2>
-        <p className="text-slate-500 mt-5 font-mono mb-[4rem] text-justify text-[5px] sm:text-[10px]  md:text-[15px] ">
+        <p className="text-slate-500 mt-5 font-mono mb-[2rem] text-justify text-[10px] sm:text-[15px]  md:text-[15px] ">
           Blockchain developer experienced in developing decentralized
           applications (dApps) on the Ethereum blockchain. Proficient in
           Solidity, Hardhat and ethers.js for smart contract development. Strong
@@ -35,7 +35,7 @@ export default function Home() {
           <br />
           Checkout my projects 👇👇
         </p>
-        <div className="flex justify-start rounded-lg border-2 border-teal-400 text-teal-400 px-3 py-1 w-28 text-[10px] sm:text-[15px]  md:text-[20px]">
+        <div className="flex justify-start rounded-lg border-2 border-teal-400 text-teal-400 w-14 sm:px-3 sm:py-1 sm:w-28 text-[10px] sm:text-[15px]  md:text-[20px]">
           <Link className="p-2" to="/projects">
             Projects
           </Link>

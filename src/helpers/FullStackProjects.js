@@ -10,6 +10,7 @@ export const FullStackprojectList = [
     skills: "Solidity, Hardhat, Chainlink Oracles",
     category: "Blockchain",
     link: "https://github.com/PrateekSavanur/NFT-Hardhat",
+    color: "teal-200",
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ export const FullStackprojectList = [
     skills: "HTML,CSS,node,js,express.js",
     category: "Backend",
     link: "https://github.com/PrateekSavanur/Node-farm.git",
+    color: "white",
   },
   {
     id: 3,
@@ -26,5 +28,6 @@ export const FullStackprojectList = [
     skills: "React.js ,node.js, express.js, MongoDB, Mongoose",
     category: "Fullstack",
     link: "https://github.com/PrateekSavanur/Tours.git",
+    color: "white",
   },
 ];

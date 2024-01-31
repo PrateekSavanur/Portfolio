@@ -9,6 +9,7 @@ export const FrontendProjects = [
     skills: "React Js",
     category: "Fontend",
     link: "https://github.com/PrateekSavanur/Travel-List",
+    color: "rose-200",
   },
   {
     id: 2,
@@ -17,5 +18,6 @@ export const FrontendProjects = [
     skills: "React Js",
     category: "Frontend",
     link: "https://github.com/PrateekSavanur/personal-portfolio",
+    color: "white",
   },
 ];
