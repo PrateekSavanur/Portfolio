@@ -13,7 +13,7 @@ export default function Experience() {
       <VerticalTimeline lineColor="#172554">
         <VerticalTimelineElement
           className="vertical-timeline-element--education "
-          date="September 2023 - Present"
+          date="September 2023 - January 2024"
           iconStyle={{ background: "#172554", color: "#fff" }}
           icon={<WorkIcon />}
         >
@@ -67,17 +67,6 @@ export default function Experience() {
             Dayananda Sagar college of Engineering , Bangalore
           </h3>
           <p>Bachelor of Engineering in Computer Science and Engineering</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="2019-2021"
-          iconStyle={{ background: "#172554", color: "#fff" }}
-          icon={<SchoolIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Expert pre university college , Mangalore
-          </h3>
-          <p> I and II PU (11th and 12th)</p>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>

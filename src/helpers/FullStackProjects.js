@@ -1,6 +1,7 @@
 import NFT from "../assets/NFT.jpg";
 import Farm from "../assets/farm.png";
 import Tours from "../assets/tours.png";
+import SwapToken from "../assets/SwapToken.png";
 
 export const FullStackprojectList = [
   {
@@ -28,6 +29,15 @@ export const FullStackprojectList = [
     skills: "React.js ,node.js, express.js, MongoDB, Mongoose",
     category: "Fullstack",
     link: "https://github.com/PrateekSavanur/Tours.git",
+    color: "white",
+  },
+  {
+    id: 4,
+    name: "Token Swap",
+    image: SwapToken,
+    skills: "React.js, express.js, Moralis, 1inch",
+    category: "Blockchain",
+    link: "https://github.com/PrateekSavanur/Token-Swap",
     color: "white",
   },
 ];
