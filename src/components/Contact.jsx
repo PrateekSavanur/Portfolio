@@ -4,9 +4,6 @@ import { useEffect } from "react";
 import { toast } from "react-toastify";
 
 export default function Contact() {
-  // const USER_ID = import.meta.env.VITE_USER_ID;
-  // const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
-  // const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
   const form = useRef();
 
   const [checkInput, setCheckInput] = useState(false);
@@ -44,12 +41,12 @@ export default function Contact() {
 
   useEffect(() => {
     if (name && email && message) {
-      if (countWords(message) >= 150) {
+      if (countWords(message) >= 15) {
         setMessageError("");
         setCheckInput(true);
       } else {
-        if (countWords(message) < 150) {
-          setMessageError("Message must be more than 150 words");
+        if (countWords(message) < 15) {
+          setMessageError("Message must be more than 15 words");
         } else {
           setMessageError("");
         }

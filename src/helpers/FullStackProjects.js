@@ -1,7 +1,8 @@
 import NFT from "../assets/NFT.jpg";
-import Farm from "../assets/farm.png";
+import Todo from "../assets/Todo.png";
 import Tours from "../assets/tours.png";
 import SwapToken from "../assets/SwapToken.png";
+import Stablecoin from "../assets/Stablecoin.jpg";
 
 export const FullStackprojectList = [
   {
@@ -15,15 +16,24 @@ export const FullStackprojectList = [
   },
   {
     id: 2,
-    name: "Node farm",
-    image: Farm,
-    skills: "HTML,CSS,node,js,express.js",
-    category: "Backend",
-    link: "https://github.com/PrateekSavanur/Node-farm.git",
+    name: "Stablecoin DeFi",
+    image: Stablecoin,
+    skills: "Solidity, Foundry, Chainlink Oracle",
+    category: "Blockchain",
+    link: "https://github.com/PrateekSavanur/Stablecoin-DeFi",
     color: "white",
   },
   {
     id: 3,
+    name: "TODO list",
+    image: Todo,
+    skills: "Using FARM stack",
+    category: "Backend",
+    link: "https://github.com/PrateekSavanur/Todo-Fast-API",
+    color: "white",
+  },
+  {
+    id: 4,
     name: "Tours website",
     image: Tours,
     skills: "React.js ,node.js, express.js, MongoDB, Mongoose",
@@ -32,7 +42,7 @@ export const FullStackprojectList = [
     color: "white",
   },
   {
-    id: 4,
+    id: 5,
     name: "Token Swap",
     image: SwapToken,
     skills: "React.js, express.js, Moralis, 1inch",

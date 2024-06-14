@@ -8,7 +8,7 @@ export default function Navbar() {
         <NavItems />
       </div>
       <div className=" hidden  md:block">
-        <div className="flex justify-between text-[20px] text-slate-100 ">
+        <div className="flex justify-between text-[30px] text-slate-100 font-mono font-bold">
           <div className="pt-6 pl-3 ml-4 ">
             <Link className="" to="/">
               Prateek
