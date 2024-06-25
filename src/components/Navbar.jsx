@@ -29,7 +29,7 @@ export default function Navbar() {
             </Link>
             <button className="rounded-lg border-2 border-teal-400 text-teal-400 p-2 mr-8">
               <a
-                href="https://bit.ly/PrateekSavanur"
+                href="https://bit.ly/Resume_Prateek"
                 target="_blank"
                 rel="noreferrer"
               >
