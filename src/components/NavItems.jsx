@@ -49,7 +49,7 @@ export default function NavItems() {
               className="rounded-lg border-2 border-teal-400 text-teal-400 mt-4"
             >
               <a
-                href="https://bit.ly/PrateekSavanur"
+                href="https://bit.ly/Resume_Prateek"
                 target="_blank"
                 rel="noreferrer"
               >
